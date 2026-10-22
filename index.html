@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Stoic Pen Pal · Opening soon</title>
+<meta name="description" content="A private pen pal for your Stoic practice. Write honestly, and trade counsel grounded in the old philosophy, one considered letter at a time.">
+<meta property="og:title" content="Stoic Pen Pal">
+<meta property="og:description" content="Write as Seneca wrote to Lucilius. A private pen pal for your Stoic practice, opening soon.">
+<meta property="og:url" content="https://stoicpenpal.com">
+<meta name="theme-color" content="#F4F1EA">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 28'%3E%3Crect width='28' height='28' fill='%23F4F1EA'/%3E%3Crect x='4' y='6' width='20' height='16' fill='none' stroke='%231F1D1A' stroke-width='1.8'/%3E%3Cpath d='M4 6l10 8 10-8' fill='none' stroke='%231F1D1A' stroke-width='1.8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ground:#F4F1EA;--paper:#FBFAF6;--ink:#1F1D1A;--stone:#5E584F;--stone-light:#6B655C;--rule:#D9D3C7;--input:#B8B0A2;--accent:#8A5A2B;--on-accent:#F8F6F0}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--ground);color:var(--ink)}
+body{font-family:'Source Serif 4',Georgia,serif;font-size:18px;line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
+a{color:var(--ink)}a:hover{color:var(--accent)}
+.wrap{max-width:1120px;width:100%;margin:0 auto;padding:0 40px}
+header.wrap{padding-top:28px;padding-bottom:28px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:center;gap:12px;font-family:'Cormorant Garamond',serif;font-size:24px;font-weight:600;letter-spacing:.02em}
+.eyebrow{font-family:Inter,sans-serif;font-size:13px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--accent)}
+main.wrap{flex:1;padding-top:72px;padding-bottom:96px;display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:72px;align-items:center}
+.intro{display:flex;flex-direction:column;gap:28px}
+h1{margin:0;font-family:'Cormorant Garamond',serif;font-weight:500;font-size:68px;line-height:1.04;letter-spacing:-.01em}
+.lede{margin:0;max-width:36ch;font-size:20px;color:var(--stone)}
+form{display:flex;flex-direction:column;gap:12px;max-width:480px}
+label{font-family:Inter,sans-serif;font-size:14px;font-weight:600}
+.row{display:flex;gap:10px;flex-wrap:wrap}
+input[type=email]{flex:1 1 240px;font-family:'Source Serif 4',serif;font-size:18px;padding:14px 16px;border:1px solid var(--input);background:var(--paper);color:var(--ink);border-radius:2px}
+input[type=email]:focus,button:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+button{font-family:Inter,sans-serif;font-size:16px;font-weight:500;padding:0 24px;min-height:52px;background:var(--accent);color:var(--on-accent);border:0;border-radius:2px;cursor:pointer}
+button:hover{background:#73491F}
+.soon{margin:0;padding-top:20px;border-top:1px solid var(--rule);max-width:480px;font-family:'Cormorant Garamond',serif;font-size:24px;font-style:italic;color:var(--accent)}
+figure{margin:0;background:var(--paper);border:1px solid var(--rule);padding:52px 48px;box-shadow:0 1px 0 var(--rule),0 24px 48px -32px rgba(31,29,26,.35)}
+.figlabel{margin:0 0 24px;font-family:Inter,sans-serif;font-size:12px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--stone-light)}
+blockquote{margin:0;font-family:'Cormorant Garamond',serif;font-size:28px;line-height:1.4;font-style:italic}
+figcaption{margin-top:28px;display:flex;align-items:center;gap:16px;font-size:16px;color:var(--stone)}
+figcaption span{width:40px;height:1px;background:var(--accent)}
+.points{border-top:1px solid var(--rule)}
+.points .wrap{padding-top:48px;padding-bottom:48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:40px}
+.point{display:flex;gap:16px}
+.num{font-family:'Cormorant Garamond',serif;font-size:26px;line-height:1.2;color:var(--accent);min-width:28px}
+.point h2{margin:0 0 4px;font-size:18px;font-weight:600}
+.point p{margin:0;font-size:16px;color:var(--stone)}
+footer.wrap{padding-top:24px;padding-bottom:40px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-family:Inter,sans-serif;font-size:13px;color:var(--stone-light)}
+footer a{color:var(--stone-light)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+@media (max-width:760px){
+.wrap{padding:0 20px}
+header.wrap{padding-top:18px;padding-bottom:18px}
+.brand{font-size:21px}
+.eyebrow{font-size:11px}
+main.wrap{padding-top:40px;padding-bottom:48px;gap:40px}
+h1{font-size:44px;line-height:1.05}
+.lede{font-size:18px}
+.row{flex-direction:column}
+input[type=email]{flex:none}
+figure{padding:28px 24px}
+blockquote{font-size:22px}
+footer.wrap{flex-direction:column;gap:6px}
+}
+</style>
+</head>
+<body>
+<header class="wrap">
+<span class="brand"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" stroke="#1F1D1A" stroke-width="1.5" aria-hidden="true"><rect x="4" y="6" width="20" height="16"></rect><path d="M4 6l10 8 10-8"></path></svg>Stoic Pen Pal</span>
+<span class="eyebrow">Opening soon</span>
+</header>
+
+<main class="wrap">
+<div class="intro">
+<h1>Write as Seneca wrote to Lucilius.</h1>
+<p class="lede">A private pen pal for your Stoic practice. Write honestly about what troubles you, and trade counsel grounded in the old philosophy, one considered letter at a time.</p>
+
+<p class="soon">Opening soon. Check back here for the first pairings.</p>
+</div>
+
+<figure>
+<p class="figlabel">Epistle I · On saving time</p>
+<blockquote>“Continue to act thus, my dear Lucilius: set yourself free for the sake of yourself; gather and save your time.”</blockquote>
+<figcaption><span></span>Seneca, Moral Letters to Lucilius</figcaption>
+</figure>
+</main>
+
+<section class="points" aria-label="What makes Stoic Pen Pal different">
+<div class="wrap">
+<div class="point"><span class="num">I</span><div><h2>Two readers, no one else</h2><p>Only you and your pen pal ever see your letters.</p></div></div>
+<div class="point"><span class="num">II</span><div><h2>Grounded in the Stoics</h2><p>Every piece of advice names the principle it rests on.</p></div></div>
+<div class="point"><span class="num">III</span><div><h2>Slow by design</h2><p>Letters, not chat. Write when you have something to say.</p></div></div>
+</div>
+</section>
+
+<footer class="wrap">
+<span>© Stoic Pen Pal · stoicpenpal.com</span>
+<span>For adults 18 and over</span>
+</footer>
+</body>
+</html>
